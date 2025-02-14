@@ -14,10 +14,7 @@ export default function Cart() {
       </div>
     )
   }
-  // const handleRemove = (index)=>{
-  //   console.log(index)
-  //   dispatch({type:"REMOVE",index:index})
-  // }
+ 
 
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("email");
@@ -37,6 +34,7 @@ export default function Cart() {
     console.log("JSON RESPONSE:::::", response.status)
     if (response.status === 200) {
       dispatch({ type: "DROP" })
+      alert("Order successfully placed! we will reveive a order check on my order history");
     }
   }
 
