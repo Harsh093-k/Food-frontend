@@ -57,7 +57,7 @@ const Navbar = () => {
               {(Token || vemail) && (
                 <li className="nav-item">
                   <Link className="nav-link active fs-5" aria-current="page" to="/myorder">
-                    My Order
+                    My Order history
                   </Link>
                 </li>
               )}
